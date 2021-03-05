@@ -1,0 +1,17 @@
+Package: gridmapR
+Type: Package
+Title: Creates a SF Grid Map based on a sf_polygon File
+Version: 0.2.0
+Author: Lars Kroll
+Maintainer: The package maintainer <mail@lkroll.de>
+Description: This packes takes an sf file and creates an optimal 
+    hex stile representation of this map. The display is optimized 
+    to show each area equally large while preserving the outer 
+    geometry.
+License: CC0 1.0 Universal
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
