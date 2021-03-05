@@ -4,8 +4,7 @@ library(tidyverse)
 library(lwgeom)
 
 # Needs an sf File to work
-#filename  <- "data/vg2500_01-01.gk3.shape/vg2500/vg2500_krs"
-#sf_file <- read_sf(paste0(filename,".shp"))
+
 
 make_gridsf <- function(data,id_name,cellsize_value = .1,stepsize=1.025){
   if (stepsize<1){
@@ -83,10 +82,4 @@ make_gridsf <- function(data,id_name,cellsize_value = .1,stepsize=1.025){
   grid_agg
 
 }
-
-# Test
-# grid_file <- make_gridsf(sf_file,id_name="ARS",cellsize_value = .3,stepsize = 1.1)
-# ggplot() +
-#   geom_sf(data=sf_file,color="blue") +
-#   geom_sf(data=grid_file,color="red", fill=NA)
 
